@@ -1,0 +1,17 @@
+{
+"manifest_version": 2,
+    "name": "Profanity filter",
+    "description": "Filters all English profanity words into a wholesome word",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*/*"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "run_at": "document_end"
+        }
+    ]
+}
